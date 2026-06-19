@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINTAS Y EVIDENCIAS | GarzónMemoria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="#" class="logo">GARZÓN<span>MEMORIA</span></a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="biografia.html">Expediente</a>
+          <a href="clips.html" class="active">Cintas</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div style="text-align: center; margin-bottom: 3rem">
+        <span class="sello-propiedad">Archivo Clasificado de Video</span>
+        <h2
+          style="
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            background: var(--azul-profundo);
+            color: #fff;
+            padding: 12px;
+            display: inline-block;
+            transform: rotate(1deg);
+            box-shadow: 8px 8px 0px var(--tinta-oscura);
+          "
+        >
+          Estación de Monitoreo Audiovisual
+        </h2>
+      </div>
+
+      <section class="seccion-tv">
+        <div class="tv-retro-container">
+          <div class="tv-pantalla">
+            <div class="video-container">
+              <video
+                id="videoPrincipal"
+                src="Multimedia/UltimaEntrevista.mp4"
+                controls
+                muted
+                style="width: 100%; height: 100%; object-fit: contain"
+              ></video>
+            </div>
+            <div class="tv-glitch-overlay"></div>
+          </div>
+          <div class="tv-controles">
+            <div class="tv-marca">TELE-SÁTIRA</div>
+            <div class="tv-dial">CH 02</div>
+            <div class="tv-parlante"></div>
+            <div class="tv-parlante"></div>
+            <div class="tv-parlante"></div>
+          </div>
+        </div>
+
+        <div
+          class="recorte-prensa"
+          style="max-width: 800px; margin: 2rem auto; text-align: center"
+        >
+          <h3
+            id="tituloVideoActual"
+            style="
+              margin: 0;
+              color: var(--rojo-sangre);
+              text-transform: uppercase;
+            "
+          >
+            La Última Entrevista (1999)
+          </h3>
+        </div>
+
+        <div class="carrusel-vhs-container">
+          <span
+            class="titular-impacto"
+            style="font-size: 1.2rem; margin-bottom: 1rem"
+            >🗄️ Archivero de Cintas VHS</span
+          >
+          <div class="vhs-track">
+            <div
+              class="vhs-cassette"
+              onclick="
+                cambiarVideoLocal(
+                  'Multimedia/UltimaEntrevista.mp4',
+                  'La Última Entrevista (1999)',
+                )
+              "
+            >
+              <div class="vhs-label">CINTA 01: ÚLTIMA ENTREVISTA</div>
+              <div class="vhs-ventana"></div>
+            </div>
+
+            <div
+              class="vhs-cassette"
+              onclick="
+                cambiarVideoLocal(
+                  'Multimedia/Conferencia.mp4',
+                  'La Conferencia de la Universidad del Valle (1997)',
+                )
+              "
+            >
+              <div
+                class="vhs-label"
+                style="border-left-color: var(--azul-profundo)"
+              >
+                CINTA 02: CONFERENCIA
+              </div>
+              <div class="vhs-ventana"></div>
+            </div>
+
+            <div
+              class="vhs-cassette"
+              onclick="
+                cambiarVideoLocal(
+                  'Multimedia/Visionero.mp4',
+                  'El Visionero - Jaime Garzón',
+                )
+              "
+            >
+              <div
+                class="vhs-label"
+                style="border-left-color: var(--amarillo-vivo)"
+              >
+                CINTA 03: EL VISIONERO
+              </div>
+              <div class="vhs-ventana"></div>
+            </div>
+
+            <div
+              class="vhs-cassette"
+              onclick="
+                cambiarVideoLocal(
+                  'Multimedia/EntrevistaJaime.mp4',
+                  'Entrevista a Jaime Garzón',
+                )
+              "
+            >
+              <div class="vhs-label">CINTA 04: ENTREVISTA J. GARZÓN</div>
+              <div class="vhs-ventana"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr style="border: 3px dashed var(--tinta-oscura); margin: 5rem 0" />
+
+      <section class="seccion-fotos">
+        <div style="text-align: center; margin-bottom: 2rem">
+          <span
+            class="sello-propiedad"
+            style="border-color: var(--rojo-sangre); color: var(--rojo-sangre)"
+            >Evidencias Gráficas</span
+          >
+        </div>
+
+        <div class="carrusel-fotos-container">
+          <div class="foto-track">
+            <div
+              class="foto-recorte"
+              style="--rotacion: -2deg"
+              onclick="abrirMesaFotos(0)"
+            >
+              <img
+                src="Multimedia/img1.jpg"
+                alt="Garzón Alcalde de Sumapaz"
+              />
+              <div class="foto-pie">Sumapaz 1988</div>
+            </div>
+            <div
+              class="foto-recorte"
+              style="--rotacion: 3deg"
+              onclick="abrirMesaFotos(1)"
+            >
+              <img
+                src="Multimedia/img2.jpg"
+                alt="Heriberto Lustrando"
+              />
+              <div class="foto-pie">Memorias</div>
+            </div>
+            <div
+              class="foto-recorte"
+              style="--rotacion: -1deg"
+              onclick="abrirMesaFotos(2)"
+            >
+              <img
+                src="Multimedia/img3.jpg"
+                alt="Grabaciones de TV"
+              />
+              <div class="foto-pie">Cámaras QUAC!</div>
+            </div>
+            <div
+              class="foto-recorte"
+              style="--rotacion: 2deg"
+              onclick="abrirMesaFotos(3)"
+            >
+              <img
+                src="Multimedia/img4.jpg"
+                alt="Prensa e Historia"
+              />
+              <div class="foto-pie">Archivo de Prensa</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="mesa-negativos-modal" id="modalFotos">
+      <div class="modal-marco-bristar">
+        <button class="modal-cerrar-btn" onclick="cerrarMesaFotos()">
+          CERRAR [X]
+        </button>
+        <button class="modal-nav-btn nav-izq" onclick="navegarFotos(-1)">
+          ◀ ANTERIOR
+        </button>
+
+        <div class="modal-cuerpo-imagen">
+          <img id="imgModalDestino" src="" alt="Evidencia Ampliada" />
+          <div
+            id="txtModalDestino"
+            class="foto-pie"
+            style="
+              margin-top: 15px;
+              font-size: 1.1rem;
+              background: var(--tinta-oscura);
+              color: #fff;
+            "
+          ></div>
+        </div>
+
+        <button class="modal-nav-btn nav-der" onclick="navegarFotos(1)">
+          SIGUIENTE ▶
+        </button>
+      </div>
+    </div>
+
+    <div class="audio-player">
+      <span>📻 RADIO RECUERDO</span>
+      <button class="audio-btn" id="musicBtn">▶</button>
+      <audio
+        id="bgMusic"
+        loop
+        src="Multimedia/MariaCanela.mp3"
+      ></audio>
+    </div>
+
+    <footer>
+      <p>© GarzónMemoria, 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

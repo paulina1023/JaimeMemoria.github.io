@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXTRA! | GarzónMemoria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="#" class="logo">GARZÓN<span>MEMORIA</span></a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <a href="index.html" class="active">Inicio</a>
+          <a href="biografia.html">Expediente</a>
+          <a href="clips.html">Cintas</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="portada-titular">
+        <span class="sello-propiedad"
+          >Edición Especial // Circulación Nacional</span
+        >
+        <h1 class="gran-titular">
+          ¡LEAN CULTOS! EL PAÍS QUE SE RIE COLECTIVAMENTE PARA NO LLORAR
+        </h1>
+        <p class="bajada-titular">
+          A paso de lustrabotas y con la elocuencia del disfraz, Jaime Garzón
+          Forero desarmó la retórica del poder. Un recorrido digital por el
+          pensamiento, la sátira y el legado del pedagogo de la irreverencia.
+        </p>
+      </div>
+
+      <hr style="border: 4px double var(--tinta-oscura); margin: 2rem 0" />
+
+      <div class="columnas-prensa">
+        <div class="columna-principal">
+          <span class="titular-impacto">¿Quién fue el ciudadano Garzón?</span>
+          <p>
+            Abogado de la Universidad Nacional, maestro de escuela, alcalde
+            local de Sumapaz y mediador de paz. Sin embargo, el país lo recuerda
+            como el hombre que transformó la televisión en un tribunal popular a
+            punta de sonrisas desmueladas, ruanas y corbatas torcidas.
+          </p>
+          <p>
+            A través de la risa, Jaime no buscaba el chiste fácil ni el aplauso
+            vacío. Su labor fue una profunda
+            <span class="resaltado">pedagogía ciudadana</span>: obligar a una
+            sociedad adormecida a mirarse al espejo de sus propias tragedias
+            institucionales, desmantelando los discursos políticos con la lógica
+            del sentido común de la calle.
+          </p>
+
+          <div class="recorte-prensa" style="margin-top: 2rem">
+            <h4 style="margin: 0 0 10px 0; color: var(--azul-profundo)">
+              EL MANDATO VIGENTE
+            </h4>
+            <p style="margin: 0; font-style: italic">
+              "Si ustedes los jóvenes no asumen el dirección de su propio país,
+              nadie va a venir a salvárselo. ¡Nadie!"
+              <br /><strong
+                style="color: var(--tinta-oscura); font-size: 0.8rem"
+                >— Jaime Garzón, 1997.</strong
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="columna-lateral">
+          <div class="nota-archivo" style="margin-top: 0">
+            <strong>GUÍA DE MONITOREO:</strong> Explore las secciones de esta
+            plataforma interactiva utilizando el menú superior o los accesos
+            directos de abajo.
+          </div>
+
+          <div
+            class="tarjeta-indice"
+            onclick="window.location.href = 'biografia.html'"
+          >
+            <h3>📁 EL EXPEDIENTE DESCALZO</h3>
+            <p>
+              Un desglose cronológico de su vida, sus inicios comunitarios en el
+              Sumapaz, la era dorada de la sátira y el expediente judicial de su
+              magnicidio.
+            </p>
+            <span class="flecha-link">Revisar Radicados →</span>
+          </div>
+
+          <div
+            class="tarjeta-indice"
+            style="border-color: var(--azul-profundo)"
+            onclick="window.location.href = 'clips.html'"
+          >
+            <h3>📺 REPRODUCTOR DE CINTAS</h3>
+            <p>
+              Acceda a la videoteca analógica. Visualice sus conferencias
+              históricas y examine el archivo de negativos fotográficos del
+              archivo nacional.
+            </p>
+            <span class="flecha-link" style="color: var(--azul-profundo)"
+              >Encender Monitor →</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="audio-player">
+      <span>📻 RADIO RECUERDO</span>
+      <button class="audio-btn" id="musicBtn">▶</button>
+      <audio
+        id="bgMusic"
+        loop
+        src="Multimedia/MariaCanela.mp3"
+      ></audio>
+    </div>
+
+    <footer>
+      <p>© GarzónMemoria, 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

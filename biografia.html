@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EL EXPEDIENTE | Biografía Interactiva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="#" class="logo">GARZÓN<span>MEMORIA</span></a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="biografia.html" class="active">Expediente</a>
+          <a href="clips.html">Cintas</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div style="text-align: center; margin-bottom: 3rem">
+        <span class="sello-propiedad">Clasificado // Memoria Nacional</span>
+        <h2
+          style="
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            background: var(--rojo-sangre);
+            color: #fff;
+            padding: 15px;
+            display: inline-block;
+            transform: rotate(-1.5deg);
+            box-shadow: 8px 8px 0px var(--tinta-oscura);
+          "
+        >
+          Jaime Garzón: El Expediente Descalzo
+        </h2>
+      </div>
+
+      <div class="tab-container">
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="openTab(event, 'origenes')">
+            📁 Radicado 01: Orígenes
+          </button>
+          <button class="tab-btn" onclick="openTab(event, 'zoociedad')">
+            📺 Radicado 02: La Sátira
+          </button>
+          <button class="tab-btn" onclick="openTab(event, 'paz')">
+            🕊️ Radicado 03: Mediación
+          </button>
+          <button class="tab-btn" onclick="openTab(event, 'magnicidio')">
+            ❌ Radicado 04: El Crimen
+          </button>
+        </div>
+
+        <div id="origenes" class="tab-content active">
+          <span class="titular-impacto">Un Abogado con Botas Pantaneras</span>
+          <p>
+            Nacido en las frías calles de Bogotá el
+            <span class="resaltado">24 de octubre de 1960</span>, Jaime Garzón
+            Forero no encajaba en los moldes tradicionales. Se graduó de Derecho
+            en la Universidad Nacional y de Ciencias de la Educación en la
+            Pedagógica. Sabía usar la ley, pero su pasión era transformarla en
+            pedagogía popular.
+          </p>
+
+          <div class="recorte-prensa">
+            <h4 style="margin: 0 0 10px 0; color: var(--rojo-sangre)">
+              EL REVOLCÓN DE SUMAPAZ (1988)
+            </h4>
+            <p style="margin: 0">
+              Nombrado alcalde menor de la gigantesca zona rural de Sumapaz,
+              Jaime rompió los escritorios. Se unió a las jornadas de
+              pavimentación comunitaria con los campesinos, construyó escuelas y
+              gestionó recursos directamente sin intermediarios políticos. Su
+              franqueza e ironía al responder telegramas oficiales provocaron su
+              destitución, pero el mito del gobernante descalzo ya había nacido.
+            </p>
+          </div>
+
+          <div class="nota-archivo">
+            <strong>Nota al margen:</strong> Se dice que Jaime solía atender los
+            asuntos de la alcaldía local vistiendo ruanas y escuchando los
+            problemas de la comunidad caficultora mientras compartía un tinto
+            bien cargado.
+          </div>
+        </div>
+
+        <div id="zoociedad" class="tab-content">
+          <span class="titular-impacto">La Editorialización del Chiste</span>
+          <p>
+            A comienzos de los noventa, la realidad de Colombia superaba
+            cualquier ficción de terror. Jaime descubrió que el
+            <span class="resaltado">humor era el único anestésico eficaz</span>
+            para obligar al país a mirarse al espejo sin salir corriendo. Con
+            proyectos como <em>Zoociedad</em> y <em>Quac! El Noticiero</em>,
+            fundó una escuela de periodismo alternativo implacable.
+          </p>
+
+          <div
+            class="recorte-prensa"
+            style="
+              transform: rotate(1deg);
+              box-shadow: 6px 6px 0px var(--azul-profundo);
+            "
+          >
+            <p style="margin: 0; font-weight: bold">
+              "El humor político de Garzón no buscaba la risa vacía; buscaba
+              desarmar las mentiras corporativas de las élites institucionales
+              del Proceso 8.000."
+            </p>
+          </div>
+          <p>
+            No usaba la agresión directa, usaba el disfraz estratégico para
+            burlar la censura y llegar a todos los rincones del territorio.
+          </p>
+        </div>
+
+        <div id="paz" class="tab-content">
+          <span class="titular-impacto"
+            >Caminando la Selva por la Libertad</span
+          >
+          <p>
+            Cuando las pantallas se apagaban, el ciudadano Garzón asumía el
+            riesgo más alto de su vida. En una Colombia asediada por los
+            secuestros masivos y la guerra frontal, Jaime se desempeñó como
+            miembro activo de la
+            <span class="resaltado"
+              >Comisión Facilitadora de Paz de Cundinamarca</span
+            >.
+          </p>
+
+          <div class="nota-archivo">
+            <strong>REGISTRO HUMANITARIO:</strong> Garzón caminaba desarmado
+            hacia los campamentos más profundos de las cordilleras para hablar
+            de tú a tú con las comandancias guerrilleras, logrando coordinar de
+            forma exitosa la liberación de decenas de colombianos secuestrados.
+          </div>
+          <p>
+            Su extraordinaria capacidad de diálogo despertó las alarmas de
+            sectores reaccionarios y extremos dentro de las fuerzas armadas y
+            los grupos paramilitares, quienes malinterpretaron su acceso
+            humanitario como una complicidad con la delincuencia insurgente.
+          </p>
+        </div>
+
+        <div id="magnicidio" class="tab-content">
+          <span class="titular-impacto"
+            >El Viernes Negro que Apagó una Voz</span
+          >
+          <p>
+            El
+            <span
+              class="resaltado"
+              style="background-color: var(--rojo-sangre); color: #fff"
+              >13 de agosto de 1999</span
+            >
+            quedó marcado con fuego en la historia de Colombia. A las 5:45 a.m.,
+            mientras manejaba hacia su trabajo radial, Jaime fue emboscado por
+            sicarios motorizados cerca de Corferias, en Bogotá.
+          </p>
+
+          <div class="recorte-prensa" style="border-color: var(--rojo-sangre)">
+            <h4 style="margin: 0 0 10px 0; color: var(--rojo-sangre)">
+              SENTENCIA JUDICIAL
+            </h4>
+            <p style="margin: 0">
+              Décadas de investigaciones y batallas en los tribunales
+              concluyeron de forma categórica que el magnicidio de Jaime Garzón
+              fue un <strong>Crimen de Estado</strong>, planificado
+              conjuntamente entre las Autodefensas Unidas de Colombia (bajo el
+              mando de Carlos Castaño) y miembros activos de la inteligencia
+              militar estatal.
+            </p>
+          </div>
+          <p>
+            Su risa se apagó a los 38 años, pero su mensaje se incrustó en la
+            memoria colectiva de los jóvenes, convirtiéndolo en un símbolo
+            inmortal de la libre expresión.
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-top: 6rem; text-align: center">
+        <span
+          class="sello-propiedad"
+          style="
+            border-color: var(--azul-profundo);
+            color: var(--azul-profundo);
+          "
+          >Catálogo de Máscaras</span
+        >
+        <h2
+          style="
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            background: var(--tinta-oscura);
+            color: #fff;
+            padding: 10px;
+            display: inline-block;
+          "
+        >
+          Los Disfraces de la Verdad
+        </h2>
+      </div>
+
+      <div class="grid-personajes">
+        <div class="tarjeta-personaje">
+          <div class="personaje-header" style="background: var(--rojo-sangre)">
+            Heriberto de la Calle
+          </div>
+          <div class="personaje-body">
+            <p>
+              <span class="resaltado">El Lustrabotas de la Nación.</span> Con
+              una caja de betún y una sonrisa sin dientes, sentaba a presidentes
+              y ministros. Mientras les sacaba brillo a los zapatos, los
+              destruía políticamente con preguntas directas, descaradas y
+              cargadas de ironía popular.
+            </p>
+          </div>
+        </div>
+
+        <div class="tarjeta-personaje">
+          <div
+            class="personaje-header"
+            style="background: var(--azul-profundo)"
+          >
+            Godofredo Cínico Caspa
+          </div>
+          <div class="personaje-body">
+            <p>
+              <span class="resaltado">El Abogado Retógrado.</span> De traje
+              impecable, gafas gruesas y léxico rimbombante. Funcionaba como la
+              caricatura perfecta de los sectores más radicales, godos y
+              excluyentes de la élite colombiana tradicional.
+            </p>
+          </div>
+        </div>
+
+        <div class="tarjeta-personaje">
+          <div class="personaje-header" style="background: #2d2a26">
+            Dioselina Tibaná
+          </div>
+          <div class="personaje-body">
+            <p>
+              <span class="resaltado">La Cocinera del Palacio.</span> Una mujer
+              campesina que trabajaba en las cocinas de la casa presidencial.
+              Mientras pelaba papas o sazonaba con manteca, revelaba los
+              secretos de alcoba y los torcidos contratos de la alta burocracia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="audio-player">
+      <span>📻 RADIO RECUERDO</span>
+      <button class="audio-btn" id="musicBtn">▶</button>
+      <audio
+        id="bgMusic"
+        loop
+        src="Multimedia/MariaCanela.mp3"
+      ></audio>
+    </div>
+
+    <footer>
+      <p>
+        © GarzónMemoria,
+        2026.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
