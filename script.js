@@ -76,19 +76,19 @@ function cambiarVideoLocal(archivoVideo, tituloVideo) {
 
 const catalogoFotos = [
   {
-    src: "Multimedia/img1.jpg",
+    src: "img1.jpg",
     pie: "Sumapaz 1988",
   },
   {
-    src: "Multimedia/img2.jpg",
+    src: "img2.jpg",
     pie: "Memorias",
   },
   {
-    src: "Multimedia/img3.jpg",
+    src: "img3.jpg",
     pie: "Cámaras QUAC!",
   },
   {
-    src: "Multimedia/img4.jpg",
+    src: "img4.jpg",
     pie: "Archivo de Prensa",
   },
 ];
